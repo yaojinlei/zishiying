@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <title>两列布局:左侧自适应，右侧固定</title>
+    <style>
+        .g-mn{
+            float:left;
+            width:100%;
+        }
+
+        .g-mnc{
+            overflow:hidden;
+            margin-right:220px;
+        }
+
+        .g-sd{
+            float:right;
+            overflow:hidden;
+            margin-left:-200px;
+            width:200px;
+        }
+
+        .con{
+            height:100px;
+            font-size:30px;
+            text-align:center;
+            line-height:100px;
+            background: #1cd6ff;
+            border:1px dashed red;
+        }
+    </style>
+</head>
+<body>
+<div class="g-mn">
+    <div class="g-mnc">
+        <p class="con">左侧自适应宽度</p>
+    </div>
+</div>
+<div class="g-sd">
+    <p class="con">右侧固定宽度</p>
+</div>
+</body>
+</html>
